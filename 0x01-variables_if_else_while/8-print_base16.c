@@ -4,7 +4,7 @@
 *
 *Description: print numbers of base16 in lowercase
 *
-*Return: always 0 (success)
+*Return: always 0 (Success)
 */
 int main(void)
 {
@@ -16,6 +16,7 @@ int main(void)
 
 	/*after 9 we jump till 96; '*/
 	if (digit == 57)
+	digit += 39;
 	digit++;
 	}
 	putchar('\n');
