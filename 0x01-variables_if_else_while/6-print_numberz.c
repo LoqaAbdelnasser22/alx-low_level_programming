@@ -2,22 +2,19 @@
 /**
 *main - entry point
 *
-*Description: print 0-9 using putchar
-*	while using int variable
+*Description: print a-z in reverse
 *
 *Return: 0 (success)
 */
 int main(void)
 {
-	int digit = 0;
+	char ch = 'z';
 
-	while (digit <= 9)
+	while (ch >= 'a')
 	{
-	/*convert digit to ASCII representation*/
-	putchar(digit + '0');
-	digit++;
+	putchar(ch);
+	ch--;
 	}
 	putchar('\n');
-
 	return (0);
 }
