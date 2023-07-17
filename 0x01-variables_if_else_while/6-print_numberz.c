@@ -1,20 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
 *main - entry point
 *
-*Description: print a-z in reverse
-*
-*Return: 0 (success)
+*Description: print 0-9 using putchar
+*	while using int variable
+*Return: always 0 (success)
 */
 int main(void)
 {
-	char ch = 'z';
+	int digit = 0;
 
-	while (ch >= 'a')
+	while (digit <= 9)
 	{
-	putchar(ch);
-	ch--;
+	/*convert digit to ASII representation*/
+	putchar(digit + '0');
+	digit++;
 	}
 	putchar('\n');
 	return (0);
 }
+
